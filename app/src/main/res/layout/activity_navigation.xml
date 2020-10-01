@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Navigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/aboutnav"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_sentiment_very_satisfied_black_24dp"
+            android:drawableLeft="@drawable/ic_sentiment_very_satisfied_black_24dp"
+            android:gravity="end"
+            android:text="@string/about"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/loginnav"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_create_black_24dp"
+            android:drawableLeft="@drawable/ic_create_black_24dp"
+            android:drawableTint="@color/colorPrimary"
+            android:gravity="end"
+            android:text="Login"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobnav"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_person_add_black_24dp"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:gravity="end"
+            android:text="Job"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/careernav"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_business_center_black_24dp"
+            android:drawableLeft="@drawable/ic_business_center_black_24dp"
+            android:gravity="end"
+            android:text="Career"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/feedbacknav"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_feedback_black_24dp"
+            android:drawableLeft="@drawable/ic_feedback_black_24dp"
+            android:gravity="end"
+            android:text="Feedback"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/helpnav"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_help_black_24dp"
+            android:drawableLeft="@drawable/ic_help_black_24dp"
+            android:gravity="end"
+            android:text="Help"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Follow us on"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/facebooknav"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_help_black_24dp"
+            android:drawableLeft="@drawable/ic_help_black_24dp"
+            android:gravity="end"
+            android:text="Facebook"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/twitternav"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_help_black_24dp"
+            android:drawableLeft="@drawable/ic_help_black_24dp"
+            android:gravity="end"
+            android:text="Twitter"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/websitenav"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_public_black_24dp"
+            android:drawableLeft="@drawable/ic_public_black_24dp"
+            android:gravity="end"
+            android:text="Web"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/invitenav"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_share_black_24dp"
+            android:text="invite friends"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_share_black_24dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_info_black_24dp"
+            android:text="version 1.0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_info_black_24dp"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/vecties1"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

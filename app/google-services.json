@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "723375859475",
+    "firebase_url": "https://cerca-30415.firebaseio.com",
+    "project_id": "cerca-30415",
+    "storage_bucket": "cerca-30415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723375859475:android:49e9b4b1c0f519ac1b5ce6",
+        "android_client_info": {
+          "package_name": "com.example.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723375859475-avjftksvmp5dcro3i9cfplcpm2d0agu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.splash",
+            "certificate_hash": "db66c3cc023737135c72a5a8bc1ebc51a072b369"
+          }
+        },
+        {
+          "client_id": "723375859475-c3jclrjekoqbtmns47ns2j4tp090nfe0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvMZ0XT-5hQLna_xMIbFSKZ28-9WJV6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723375859475-c3jclrjekoqbtmns47ns2j4tp090nfe0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

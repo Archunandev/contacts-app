@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity android:name=".AboutActivity"
+            android:theme="@style/App"
+            android:parentActivityName=".Navigation"
+            android:label="About"/>
+        <activity
+            android:name=".Navigation"
+            android:label="Settings"
+            android:parentActivityName=".RecycleviewActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".Detailepolice"
+            android:label="Profile"
+            android:parentActivityName=".PoliceActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".PoliceActivity"
+            android:label="Police Station"
+            android:parentActivityName=".RecycleviewActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".Detailelectric"
+            android:label="Profile"
+            android:parentActivityName=".ElectriActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".RecycleviewActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".VerifyActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Signupnext2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignupnextActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OnbordActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Detailmechanic"
+            android:label="Profile"
+            android:parentActivityName=".MechanicActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".ElectriActivity"
+            android:label="Electricians"
+            android:parentActivityName=".GridView"
+            android:theme="@style/App" />
+        <activity
+            android:name=".Detailplumber"
+            android:label="Profile"
+            android:parentActivityName=".PlumberActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".PlumberActivity"
+            android:label="Plumber"
+            android:parentActivityName=".GridView"
+            android:theme="@style/App" />
+        <activity
+            android:name=".MechanicActivity"
+            android:label="Mechanic"
+            android:parentActivityName=".GridView"
+            android:theme="@style/App" />
+        <activity
+            android:name=".GridView"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Vecties</string>
+    <string name="login_button">Find</string>
+    <string name="mechanic">Mechanic</string>
+    <string name="plumber">Plumber</string>
+    <string name="electricians">Electricians</string>
+    <string name="grocery">Grocery</string>
+    <string name="ATM">ATM</string>
+    <string name="petrol">Petrol</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="Rooms">Rooms</string>
+    <string name="hotels">Hotels</string>
+    <string name="carpenter">Carpenter</string>
+    <string name="hospitals">Ambulance</string>
+    <string name="police">Police</string>
+    <string name="Doctors">First-Aid</string>
+    <string name="create_account">Welcome</string>
+    <string name="code">Code</string>>
+    <string name="view">View</string>
+    <string name="note">NOTE: Click the Phone to contact him directly (OR) The below contact option used to call our expert workers no extra charges.</string>
+    <string name="todo">TODO</string>
+    <string name="mg">Enter one time password \n Send on your phone wait a sec... </string>
+    <string name="emergency">Emergency</string>
+    <string name="expand">Expand</string>
+    <string name="welder">Welder</string>
+    <string name="vecties">Vecties</string>
+    <string name="workers">Workers</string>
+    <string name="location">location</string>
+    <string name="namem">namem</string>
+    <string name="loading">Loading...</string>
+    <string name="connection">Please Make Sure Your \n Internet Connection and</string>
+    <string name="call_him_directly">Call him Directly</string>
+    <string name="share_location_via_sms">Share location via SMS</string>
+    <string name="share_location_via_whats_app">Share location via Whats app</string>
+    <string name="sms"><u>sms</u></string>
+    <string name="whatsapp"><u>whatsapp</u></string>
+    <string name="about"> About</string>
+
+    <!--LOCATION ENTER HERE -->
+
+
+    <!-- WORKERS NAME ENTER HERE -->
+
+
+</resources>
