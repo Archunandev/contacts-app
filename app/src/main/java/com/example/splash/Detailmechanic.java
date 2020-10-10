@@ -6,6 +6,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -92,13 +95,22 @@ public class Detailmechanic extends AppCompatActivity {
         textViewdetails4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String message = " hello workers i want Mechanic here is my address...";
-                String number = textViewdetails4.getText().toString();
 
-                Uri uri = Uri.parse("smsto:" + number);
-                Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
-                intent.putExtra("sms_body",message);
-                startActivity(intent);
+
+                ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("copied", textViewdetails4.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+
+                Toast.makeText(Detailmechanic.this, "copied Done", Toast.LENGTH_SHORT).show();
+
+
+                //String message = " hello workers i want Mechanic here is my address...";
+                //String number = textViewdetails4.getText().toString();
+
+               // Uri uri = Uri.parse("smsto:" + number);
+               // Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
+               // intent.putExtra("sms_body",message);
+               // startActivity(intent);
 
             }
         });

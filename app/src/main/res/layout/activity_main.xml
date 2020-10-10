@@ -31,7 +31,7 @@
             android:layout_marginTop="250dp"
             android:layout_gravity="center"
             android:contentDescription="@string/todo"
-            android:src="@drawable/vectiesnew" />
+            android:src="@drawable/vecties1"/>
 
 
     </LinearLayout>

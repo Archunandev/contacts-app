@@ -19,9 +19,9 @@
         android:orientation="vertical"
         app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="10dp"
+        app:contentPadding="5dp"
         app:cardElevation="5dp"
         app:cardUseCompatPadding="true"
-        app:contentPadding="5dp"
         tools:context=".Detailmechanic"
         tools:ignore="MissingConstraints">
 
@@ -125,14 +125,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:autoLink="phone"
+                android:drawableEnd="@drawable/ic_baseline_file_copy_24"
                 android:background="@drawable/textstyle"
                 android:textColorLink="@color/colorPrimary"
+                android:drawablePadding="15dp"
                 android:clickable="true"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:text="phone"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:drawableRight="@drawable/ic_baseline_file_copy_24" />
 
             <View
                 android:layout_width="match_parent"
@@ -163,12 +167,15 @@
                 android:textColorLink="@color/truewhite"
                 android:linksClickable="true"
                 android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_file_copy_24"
+                android:drawablePadding="15dp"
                 android:background="@drawable/textstyle"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:text="@string/sms"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:drawableRight="@drawable/ic_baseline_file_copy_24" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
@@ -197,6 +204,7 @@
                 android:textColorLink="@color/truewhite"
                 android:linksClickable="true"
                 android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_file_copy_24"
                 android:background="@drawable/textstyle"
                 android:layout_margin="10dp"
                 android:gravity="center"
@@ -234,39 +242,48 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:text="Call - Us"
+        android:text="Call him"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/ic_phone_black_24dp"
         android:background="@drawable/normalbuttondesiign"
         android:textColor="@color/truewhite"
-         />
+        />
 
     <Button
         android:id="@+id/sendsmsmechanic"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/normalbuttondesiign"
-        android:text="Send - SMS"
+        android:text="Send SMS"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/ic_sms_black_24dp"
         android:textColor="@color/truewhite"
-         />
+        />
 
     <Button
         android:id="@+id/sendwhatsappmechanic"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Send - Whatsapp"
+        android:text="Chat Whatsapp"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/ic_message_black_24dp"
         android:background="@drawable/normalbuttondesiign"
         android:textColor="@color/truewhite"
          />
 
     <Button
         android:id="@+id/map"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="map"
+        android:text="Map"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/ic_location_on_black_24dp"
         android:textColor="@color/truewhite"
+        android:drawableTint="@color/truewhite"
         android:background="@drawable/normalbuttondesiign"
          />
 

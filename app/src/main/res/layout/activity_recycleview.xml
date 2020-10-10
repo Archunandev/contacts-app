@@ -13,6 +13,8 @@
         android:orientation="vertical"
         android:background="@color/truewhite">
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -21,36 +23,186 @@
             android:background="@color/colorPrimary">
             <ImageView
                 android:id="@+id/navigattion"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:tint="@color/truewhite"
-                android:padding="15dp"
-                android:src="@drawable/ic_menu_black_24dp"/>
+                android:padding="12dp"
+                android:src="@drawable/custommenu"
+                app:tint="@color/truewhite" />
             <ImageView
                 android:id="@+id/centerimage"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:tint="@color/truewhite"
                 android:src="@drawable/vecties1"
-                />
+                app:tint="@color/truewhite" />
             <ImageView
                 android:id="@+id/mapmenu"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="160dp"
-                android:padding="15dp"
-                android:src="@drawable/ic_location_on_black_24dp"
-                android:tint="@color/truewhite"
-                android:layout_marginLeft="200dp" />
+                android:padding="1dp"
+                android:src="@drawable/googlemap"
+                android:layout_marginLeft="200dp"
+                />
             <ImageView
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:padding="15dp"
-                android:src="@drawable/ic_person_black_24dp"
-                android:tint="@color/truewhite"
-                android:layout_marginLeft="200dp" />
+                android:padding="7dp"
+                android:src="@drawable/loginsecure"
+                android:layout_marginLeft="200dp"
+                android:elevation="20dp"
+                 />
+        </LinearLayout>
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageslider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="0"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sliderback"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get a Way"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/blach_border2"
+                    android:elevation="8dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/workersintent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/runworkers"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workers"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/blach_border2"
+                    android:elevation="8dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/emergengyintent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/emer2"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emergency"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/blach_border2"
+                    android:elevation="8dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/Fooddeliveryintent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/runworkers"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/blach_border2"
+                    android:elevation="8dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/helplineintent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/runworkers"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Helpline"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <TextView

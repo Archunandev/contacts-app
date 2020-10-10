@@ -6,4 +6,6 @@
     <color name="truewhite">#fff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000</color>
+    <color name="phonecolor">#00C81B</color>
+
 </resources>
