@@ -57,7 +57,7 @@ public class OnbordActivity extends AppCompatActivity {
         mList.add(new Onborditems("Workers","You can find your nearest workers or contact us to get our professional workers like Mechanic, Electricians, Plumber, Carpenter, Welder.",R.drawable.workers));
         mList.add(new Onborditems("Emergency","You can find your nearest Ambulance, First-aid doctor console, police contact and much more, with few clicks to you get.",R.drawable.emergency));
         mList.add(new Onborditems("Contact - Us","You can directly contact our team to get your source for what you want?  Note: (we are provide this service for FREE)",R.drawable.contact));
-        mList.add(new Onborditems("WELCOME","Thanks for choosing our application we are hearty helping you.can you access and get your nearest sources or contact our experts for free. you do not pay extra charge for our experts., ",R.drawable.welcome));
+        mList.add(new Onborditems("WELCOME","Thanks for choosing our application we are hearty providing you to get your nearest sources or contact our experts for free. you do not pay extra charge for our experts., ",R.drawable.welcome));
 
         mscreenpager = findViewById(R.id.screenviewr);
         introviewpageradapter = new Onbordadapter(this,mList);

@@ -89,7 +89,8 @@
             android:theme="@style/App" />
         <activity
             android:name=".GridView"
-            android:theme="@style/AppTheme" />
+            android:parentActivityName=".RecycleviewActivity"
+            android:theme="@style/App" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme" />

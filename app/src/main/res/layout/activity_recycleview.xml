@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/truewhite"
     tools:context=".RecycleviewActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/truewhite">
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,27 +38,38 @@
                 />
             <ImageView
                 android:id="@+id/login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
-                android:padding="7dp"
-                android:src="@drawable/loginsecure"
+                android:padding="10dp"
+                android:src="@drawable/ic_person_black_24dp"
                 android:layout_marginLeft="200dp"
                 android:elevation="20dp"
-                 />
+                app:tint="@color/truewhite" />
         </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/truewhite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/truewhite">
 
         <com.denzcoskun.imageslider.ImageSlider
             android:id="@+id/imageslider"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             app:iss_auto_cycle="true"
-            app:iss_period="1000"
+            app:iss_period="2000"
             app:iss_delay="0"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginTop="10dp"
             android:background="@drawable/sliderback"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             />
         <RelativeLayout
             android:layout_width="match_parent"
@@ -86,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="5dp"
             >
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -107,12 +112,7 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/workers"
-                    android:textAlignment="center"
-                    android:gravity="center_horizontal" />
+
 
             </LinearLayout>
 
@@ -136,12 +136,7 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/emergency"
-                    android:textAlignment="center"
-                    android:gravity="center_horizontal" />
+
 
             </LinearLayout>
 
@@ -165,12 +160,7 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Food"
-                    android:textAlignment="center"
-                    android:gravity="center_horizontal" />
+
 
             </LinearLayout>
 
@@ -194,14 +184,375 @@
 
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Helpline"
-                    android:textAlignment="center"
-                    android:gravity="center_horizontal" />
+
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/blach_border2"
+                    android:elevation="8dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/mycontcatintent"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/runworkers"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workers"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textSize="15sp"
+                    android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mechanic"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandmechanicall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/electricians"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandelecall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/plumber"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandplumberall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/carpenter"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandcarpenterall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/welder"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandwelderall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emergency"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textAllCaps="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textSize="15sp"
+                    android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/police"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/expandpoliceall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hospitals"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="First Aid"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:background="@drawable/blach_border2"
+                        android:layout_margin="15dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mechanic"
+                            android:textColor="@color/truewhite"
+                            android:textSize="30sp"
+                            android:padding="20dp"
+                            />
+
+                        <Button
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:background="@null"
+                            android:padding="20dp"
+                            android:text="Expand" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
         </LinearLayout>
 
@@ -653,7 +1004,7 @@
 
         </RelativeLayout>
 
+            </LinearLayout>
+        </ScrollView>
 
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>

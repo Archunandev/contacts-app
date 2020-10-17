@@ -4,7 +4,7 @@
     <string name="login_button">Find</string>
     <string name="mechanic">Mechanic</string>
     <string name="plumber">Plumber</string>
-    <string name="electricians">Electricians</string>
+    <string name="electricians">Electrician</string>
     <string name="grocery">Grocery</string>
     <string name="ATM">ATM</string>
     <string name="petrol">Petrol</string>
@@ -36,6 +36,7 @@
     <string name="sms"><u>sms</u></string>
     <string name="whatsapp"><u>whatsapp</u></string>
     <string name="about"> About</string>
+    <string name="my_contact">My \n Contact</string>
 
     <!--LOCATION ENTER HERE -->
 

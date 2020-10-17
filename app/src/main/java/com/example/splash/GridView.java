@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 public class GridView extends AppCompatActivity {
 
-    GridLayout mainGrid;
+    Button mechanic,elec,plumber,carpenter,welder,police,firstaid,ambulance,contactus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

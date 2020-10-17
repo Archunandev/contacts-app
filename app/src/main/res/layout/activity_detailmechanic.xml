@@ -201,16 +201,18 @@
                 android:textColor="@color/colorPrimary"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColorLink="@color/truewhite"
                 android:linksClickable="true"
                 android:clickable="true"
+                android:autoLink="web"
+                android:textColorLink="@color/colorPrimary"
                 android:drawableEnd="@drawable/ic_baseline_file_copy_24"
                 android:background="@drawable/textstyle"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:paddingLeft="10dp"
                 android:text="@string/whatsapp"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:drawableRight="@drawable/ic_baseline_file_copy_24" />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
