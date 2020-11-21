@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:padding="15dp"
+    android:padding="8dp"
     android:background="@color/truewhite">
 
     <LinearLayout
@@ -13,44 +13,44 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
         <ImageView
             android:id="@+id/signup_back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
             android:padding="5dp"
-            android:tint="@color/colorPrimary"
-            android:transitionName="trantion_back_arrow_btn"
-            android:src="@drawable/ic_arrow_back_black_24dp"/>
+            app:tint="@color/colorPrimary" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <TextView
             android:id="@+id/signup_title_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:textAllCaps="true"
-            android:transitionName="trantion_titletext"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
             android:text="@string/create_account"
-            android:layout_marginTop="20dp"
-            android:textSize="40sp"/>
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:transitionName="trantion_titletext" />
         <ImageView
             android:id="@+id/signup_avater"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:padding="5dp"
             android:transitionName="trantion_avater"
-            android:src="@drawable/welcome"/>
+            android:src="@drawable/logooriginal"/>
     </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             >
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_username"
                 app:startIconDrawable="@drawable/ic_perm_identity_black_24dp"
-                android:hint="User Name"
+                android:hint="@string/role"
                 android:layout_marginTop="20dp"
                 app:hintTextColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
@@ -109,8 +109,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_email"
                 android:layout_marginTop="20dp"
-                app:startIconDrawable="@drawable/ic_email_black_24dp"
-                android:hint="Email"
+                app:startIconDrawable="@drawable/ic_business_center_black_24dp"
+                android:hint="@string/currentjob"
                 app:hintTextColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
                 android:background="@null"
@@ -126,21 +126,48 @@
                     android:textColor="@color/colorPrimary"
                     android:background="@null"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_location"
+                app:startIconDrawable="@drawable/ic_location_on_black_24dp"
+                android:hint="Location"
+                android:layout_marginTop="20dp"
+                app:hintTextColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:background="@null"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:startIconTint="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/colorPrimary"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@null"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/signup_password"
                 android:layout_marginTop="20dp"
-                app:startIconDrawable="@drawable/ic_lock_black_24dp"
-                android:hint="Password"
+                app:startIconDrawable="@drawable/ic_message_black_24dp"
+                android:hint="How can you help you?"
                 app:hintTextColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary"
                 android:background="@null"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/colorPrimary"
                 app:endIconTint="@color/colorPrimary"
                 app:startIconTint="@color/colorPrimary"
                 app:boxStrokeWidthFocused="2dp"
@@ -152,7 +179,7 @@
                     android:textColor="@color/colorPrimary"
                     android:background="@null"
                     android:layout_height="match_parent"
-                    android:inputType="textPassword" />
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -41,6 +41,8 @@ public class MechanicActivity extends AppCompatActivity {
     FirebaseRecyclerAdapter<Mechanicuser,Mechanicholder>adapter;
     DatabaseReference Databaseref;
 
+    TextView noresult;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,13 +61,14 @@ public class MechanicActivity extends AppCompatActivity {
                 loading.dismissDialog();
 
             }
-        },5000);
+        },3000);
 
 
 
         Databaseref = FirebaseDatabase.getInstance().getReference().child("car");
 
         inputsearchm = findViewById(R.id.inputsearchm);
+        noresult = findViewById(R.id.noresultmec);
         mechanicrecycle = findViewById(R.id.mechanicrecycle);
         mechanicrecycle.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         mechanicrecycle.setHasFixedSize(true);
@@ -80,6 +83,7 @@ public class MechanicActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+
 
             }
 
@@ -96,13 +100,16 @@ public class MechanicActivity extends AppCompatActivity {
         });
 
 
+
     }
 
     private void LoadData(String data) {
 
         Query query = Databaseref.orderByChild("locationm").startAt(data).endAt(data+"\uf8ff");
 
+
         options = new FirebaseRecyclerOptions.Builder<Mechanicuser>().setQuery(query,Mechanicuser.class).build();
+
         adapter = new FirebaseRecyclerAdapter<Mechanicuser, Mechanicholder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull Mechanicholder holder, final int position, @NonNull Mechanicuser model) {

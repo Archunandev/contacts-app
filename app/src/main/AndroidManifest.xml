@@ -14,10 +14,20 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".AboutActivity"
+        <activity android:name=".Detailfood"
+            android:parentActivityName=".FoodActivity"
             android:theme="@style/App"
+            android:label="Hotel Details"/>
+        <activity
+            android:name=".FoodActivity"
+            android:label="Food Shops"
+            android:parentActivityName=".RecycleviewActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
             android:parentActivityName=".Navigation"
-            android:label="About"/>
+            android:theme="@style/App" />
         <activity
             android:name=".Navigation"
             android:label="Settings"
@@ -89,6 +99,7 @@
             android:theme="@style/App" />
         <activity
             android:name=".GridView"
+            android:label="Categories"
             android:parentActivityName=".RecycleviewActivity"
             android:theme="@style/App" />
         <activity

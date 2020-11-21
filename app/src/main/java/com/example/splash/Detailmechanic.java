@@ -16,6 +16,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
 import android.text.style.UnderlineSpan;
 import android.view.View;
 import android.widget.Button;
@@ -53,6 +54,8 @@ public class Detailmechanic extends AppCompatActivity {
         textViewdetails4 = findViewById(R.id.textviewdetail4);
 
         textViewdetails5 = findViewById(R.id.textviewdetail5);
+        textViewdetails5.setMovementMethod(LinkMovementMethod.getInstance());
+
         callmechanic = findViewById(R.id.callusmechanic);
         callsms = findViewById(R.id.sendsmsmechanic);
         callwhatsapp = findViewById(R.id.sendwhatsappmechanic);
@@ -114,17 +117,7 @@ public class Detailmechanic extends AppCompatActivity {
 
             }
         });
-        textViewdetails5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String tonumber = textViewdetails5.getText().toString();
-                Uri uri = Uri.parse("smsto:" + tonumber);
-                Intent i =new Intent(Intent.ACTION_SENDTO,uri);
-                i.setPackage("com.whatsapp");
-                startActivity(Intent.createChooser(i, ""));
 
-            }
-        });
 
 
 
@@ -162,9 +155,10 @@ public class Detailmechanic extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String tonumber = textViewdetails5.getText().toString();
-                Uri uri = Uri.parse("smsto:" + tonumber);
-                Intent i =new Intent(Intent.ACTION_SENDTO,uri);
-                i.setPackage("com.whatsapp");
+                Uri uri = Uri.parse(tonumber);
+                Intent i =new Intent();
+                i.setData(uri);
+                i.setAction(Intent.ACTION_VIEW);
                 startActivity(Intent.createChooser(i, ""));
 
             }

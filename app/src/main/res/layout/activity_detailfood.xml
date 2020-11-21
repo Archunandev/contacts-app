@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detailfood">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            tools:context=".Detailfood"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageviewdetailf"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="About"
+                    android:textSize="20sp"
+                    android:drawableTint="@color/truewhite"/>
+
+                <TextView
+                    android:id="@+id/textviewdetailfood1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textstyle"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="15dp"
+                    android:text="location is base dto delivry what youuwant a recipe inyour place we deliverit fee"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:drawableBottom="@drawable/ic_location_on_black_24dp"
+                    android:drawableTint="@color/truewhite"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Location"
+                    android:textColor="@color/truewhite"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textviewdetailfood2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textstyle"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="location"
+                    android:textSize="20sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Hotel Name"
+                    android:textSize="20sp"
+                    android:drawableBottom="@drawable/ic_person_black_24dp"
+                    android:drawableTint="@color/truewhite"/>
+
+                <TextView
+                    android:id="@+id/textviewdetailfood3"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textstyle"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="namem"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/call_him_directly"
+                    android:textSize="20sp"
+                    android:drawableBottom="@drawable/ic_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textviewdetailfood4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:autoLink="phone"
+                    android:drawableEnd="@drawable/ic_baseline_file_copy_24"
+                    android:background="@drawable/textstyle"
+                    android:textColorLink="@color/colorPrimary"
+                    android:drawablePadding="15dp"
+                    android:clickable="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="phone"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:drawableRight="@drawable/ic_baseline_file_copy_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:drawableBottom="@drawable/ic_sms_black_24dp"
+                    android:text="@string/share_location_via_sms"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/textviewdetailfood5"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorLink="@color/truewhite"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_baseline_file_copy_24"
+                    android:drawablePadding="15dp"
+                    android:background="@drawable/textstyle"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sms"
+                    android:textSize="20sp"
+                    android:drawableRight="@drawable/ic_baseline_file_copy_24" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/share_location_via_whats_app"
+                    android:textSize="20sp"
+                    android:drawableBottom="@drawable/ic_message_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textviewdetailfood6"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimary"
+                    android:background="@drawable/textstyle"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/whatsapp"
+                    android:textSize="20sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/truewhite"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/share_location_via_whats_app"
+                    android:textSize="20sp"
+                    android:drawableBottom="@drawable/ic_message_black_24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textviewdetailfood7"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:linksClickable="true"
+                    android:clickable="true"
+                    android:autoLink="web"
+                    android:textColorLink="@color/colorPrimary"
+                    android:background="@drawable/textstyle"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="@string/whatsapp"
+                    android:textSize="20sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/truewhite"
+                    />
+                <Button
+                    android:id="@+id/startchat"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Click to Chat"
+                    android:drawableEnd="@drawable/ic_send_black_24dp"
+                    android:background="@drawable/loginbutton"
+                    android:textColor="@color/colorPrimary"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawableRight="@drawable/ic_send_black_24dp"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <Button
+            android:id="@+id/callusfood"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Call him"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_phone_black_24dp"
+            android:background="@drawable/normalbuttondesiign"
+            android:textColor="@color/truewhite"
+            />
+
+        <Button
+            android:id="@+id/sendsmsfood"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/normalbuttondesiign"
+            android:text="Send SMS"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_sms_black_24dp"
+            android:textColor="@color/truewhite"
+            />
+
+        <Button
+            android:id="@+id/sendwhatsappfood"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Chat Whatsapp"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_message_black_24dp"
+            android:background="@drawable/normalbuttondesiign"
+            android:textColor="@color/truewhite"
+            />
+
+        <Button
+            android:id="@+id/mapfood"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Map"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_location_on_black_24dp"
+            android:textColor="@color/truewhite"
+            android:drawableTint="@color/truewhite"
+            android:background="@drawable/normalbuttondesiign"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/note"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

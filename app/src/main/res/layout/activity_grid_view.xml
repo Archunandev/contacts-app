@@ -233,50 +233,7 @@
 
     </RelativeLayout>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="15dp"
-        android:layout_margin="20dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/blach_border2"
-            >
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/emergencycall"
-                android:layout_marginLeft="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contact-us"
-                android:textColor="@color/truewhite"
-                android:textSize="30sp"
-                android:layout_alignParentRight="true"
-                android:padding="25dp"
-                />
-            <Button
-                android:id="@+id/expandcontactworkersus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Expand"
-                android:background="@null"
-                android:layout_alignParentRight="true"
-                android:padding="20dp"
-                android:layout_alignParentBottom="true"
-                />
-
-
-        </RelativeLayout>
-
-
-    </androidx.cardview.widget.CardView>
 
 
     <TextView
@@ -420,45 +377,6 @@
 
     </androidx.cardview.widget.CardView>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="190dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/blach_border2"
-            android:layout_margin="20dp"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contact-Us"
-                android:textColor="@color/truewhite"
-                android:textSize="30sp"
-                android:padding="25dp"
-                />
-            <Button
-                android:id="@+id/expandcontactus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Expand"
-                android:background="@null"
-                android:padding="20dp"
-                android:layout_alignParentBottom="true"
-                />
-
-        </RelativeLayout>
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/emergencycall"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="-0dp"
-            />
-
-    </RelativeLayout>
 
     </LinearLayout>
 

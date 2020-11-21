@@ -16,9 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_cancel_black_24dp"
-            android:tint="@color/truewhite"
             android:padding="5dp"
-            />
+            app:tint="@color/truewhite" />
 
         <TextView
             android:layout_width="wrap_content"

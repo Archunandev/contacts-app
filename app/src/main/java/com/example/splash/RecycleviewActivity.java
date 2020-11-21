@@ -11,11 +11,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -33,9 +35,10 @@ import java.util.List;
 public class RecycleviewActivity extends AppCompatActivity {
 
     private long backPressedTime;
+    private Toast backToast;
 
-    Button mechanic,elec,plumber,carpenter,welder,police,firstaid,ambulance,contactus;
-    ImageView login,navigation,mapmenu,centerimage;
+    TextView mechanic,elec,plumber,carpenter,welder,police,firstaid,ambulance,contactus ,seeallworkers,seeallemer,foodactivity;
+    ImageView login,navigation,mapmenu,centerimage,addcontact;
     ImageSlider mainSlider;
 
     @Override
@@ -43,19 +46,40 @@ public class RecycleviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycleview);
 
-        mechanic = findViewById(R.id.expandmechanic);
-        elec = findViewById(R.id.expandelec);
-        plumber = findViewById(R.id.expandplumber);
-        carpenter = findViewById(R.id.expandcarpenter);
-        welder = findViewById(R.id.expandwelder);
-        police = findViewById(R.id.expandpolice);
-        firstaid = findViewById(R.id.expandfirstaid);
-        ambulance = findViewById(R.id.expandambulance);
-        contactus = findViewById(R.id.expandcontactus);
+        final Loading loading = new Loading(RecycleviewActivity.this);
+
+        loading.StartLoadingDialog();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                loading.dismissDialog();
+
+            }
+        },3000);
+
+        mechanic = findViewById(R.id.expandmechanicall);
+        elec = findViewById(R.id.expandelecall);
+       plumber = findViewById(R.id.expandplumberall);
+        carpenter = findViewById(R.id.expandcarpenterall);
+        welder = findViewById(R.id.expandwelderall);
+        police = findViewById(R.id.expandpoliceall);
+
+
+       // firstaid = findViewById(R.id.expandfirstaid);
+       // ambulance = findViewById(R.id.expandambulance);
+       // contactus = findViewById(R.id.expandcontactus);
         login = findViewById(R.id.login);
         navigation = findViewById(R.id.navigattion);
+        addcontact = findViewById(R.id.addcontact);
         mapmenu = findViewById(R.id.mapmenu);
         centerimage = findViewById(R.id.centerimage);
+        foodactivity = findViewById(R.id.foodactivity);
+
+        seeallworkers = findViewById(R.id.seeallworkers);
+        seeallemer = findViewById(R.id.seeallemer);
 
 
         mainSlider = (ImageSlider) findViewById(R.id.imageslider);
@@ -67,14 +91,15 @@ public class RecycleviewActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         for (DataSnapshot data:snapshot.getChildren()){
-                            remoteimages.add(new SlideModel(data.child("url").getValue().toString(),data.child("title").getValue().toString(), ScaleTypes.FIT));
+                            remoteimages.add(new SlideModel(data.child("url").getValue().toString(),ScaleTypes.FIT));
 
                             mainSlider.setImageList(remoteimages,ScaleTypes.FIT);
 
                             mainSlider.setItemClickListener(new ItemClickListener() {
                                 @Override
                                 public void onItemSelected(int i) {
-                                    Toast.makeText(getApplicationContext(),remoteimages.get(i).getTitle().toString(),Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(RecycleviewActivity.this,GridView.class);
+                                    startActivity(intent);
                                 }
                             });
                         }
@@ -89,6 +114,7 @@ public class RecycleviewActivity extends AppCompatActivity {
 
 
         ConnectivityManager connectivityManager= (ConnectivityManager)
+
         getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
 
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -117,6 +143,16 @@ public class RecycleviewActivity extends AppCompatActivity {
             dialog.show();
         }
         else {
+
+            addcontact.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(RecycleviewActivity.this,LoginActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+
             navigation.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -125,6 +161,15 @@ public class RecycleviewActivity extends AppCompatActivity {
                 }
             });
 
+
+            login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(RecycleviewActivity.this, Signupnext2Activity.class);
+                    startActivity(intent);
+                    onBackPressed();
+                }
+            });
 
             mechanic.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -174,50 +219,50 @@ public class RecycleviewActivity extends AppCompatActivity {
                 }
             });
 
-            firstaid.setOnClickListener(new View.OnClickListener() {
+            seeallworkers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, MechanicActivity.class);
+                    Intent intent = new Intent(RecycleviewActivity.this, GridView.class);
                     startActivity(intent);
+
                 }
             });
 
-            ambulance.setOnClickListener(new View.OnClickListener() {
+            seeallemer.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, MechanicActivity.class);
+                    Intent intent = new Intent(RecycleviewActivity.this, GridView.class);
                     startActivity(intent);
+
                 }
             });
 
-            contactus.setOnClickListener(new View.OnClickListener() {
+            foodactivity.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, MechanicActivity.class);
+
+                    Intent intent = new Intent(RecycleviewActivity.this, FoodActivity.class);
                     startActivity(intent);
+
                 }
             });
 
-            login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, Signupnext2Activity.class);
-                    startActivity(intent);
-                }
-            });
+
+
         }
     }
 
     @Override
     public void onBackPressed() {
 
-
         if (backPressedTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
             super.onBackPressed();
             return;
 
         }else {
-            Toast.makeText(getBaseContext(),"Press again to exit", Toast.LENGTH_SHORT).show();
+           backToast =  Toast.makeText(getBaseContext(),"Press again to exit", Toast.LENGTH_SHORT);
+           backToast.show();
         }
 
         backPressedTime = System.currentTimeMillis();

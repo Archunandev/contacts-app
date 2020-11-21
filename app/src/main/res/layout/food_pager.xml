@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <TextView
-        android:id="@+id/noresultmec"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No Result"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
-
-<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
     app:cardUseCompatPadding="true"
     app:cardElevation="5dp"
     app:cardBackgroundColor="@color/colorPrimary"
-    android:orientation="vertical"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
-
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,8 +21,9 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/mechanicphoto"
+                android:id="@+id/foodphoto"
                 android:scaleType="centerCrop"
+                android:layout_marginLeft="15dp"
                 android:adjustViewBounds="true"
                 android:padding="2dp"/>
 
@@ -51,8 +38,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
+                android:text="About"
+                android:id="@+id/aboutfood"
+                android:textSize="20sp"
+                android:textColor="@color/truewhite"
+                android:layout_margin="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
                 android:text="@string/location"
-                android:id="@+id/locationm"
+                android:id="@+id/locationfood"
                 android:textSize="20sp"
                 android:textColor="@color/truewhite"
                 android:layout_margin="10dp"/>
@@ -63,7 +61,7 @@
                 android:textColor="@color/truewhite"
                 android:paddingLeft="10dp"
                 android:text="@string/namem"
-                android:id="@+id/namem"
+                android:id="@+id/namefood"
                 android:textSize="20sp"
                 android:layout_margin="10dp"/>
 
@@ -73,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:text="phonem"
-                android:id="@+id/phonem"
+                android:id="@+id/phonefood"
                 android:textSize="20sp"
                 android:layout_margin="10dp"/>
             <TextView
@@ -82,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:text="sendsmsm"
-                android:id="@+id/smsm"
+                android:id="@+id/smsfood"
                 android:textSize="20sp"
                 android:layout_margin="10dp"
                 android:visibility="gone"/>
@@ -93,7 +91,18 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
                 android:text="sendwhatsappm"
-                android:id="@+id/whatsappm"
+                android:id="@+id/whatsappfood"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:textColor="@color/truewhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="gpsf"
+                android:id="@+id/gpsfood"
                 android:textSize="20sp"
                 android:layout_margin="10dp"
                 android:visibility="gone"/>
@@ -111,4 +120,3 @@
 
 
 </androidx.cardview.widget.CardView>
-</RelativeLayout>

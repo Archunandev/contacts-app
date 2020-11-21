@@ -15,7 +15,7 @@
     <string name="hospitals">Ambulance</string>
     <string name="police">Police</string>
     <string name="Doctors">First-Aid</string>
-    <string name="create_account">Welcome</string>
+    <string name="create_account">Register</string>
     <string name="code">Code</string>>
     <string name="view">View</string>
     <string name="note">NOTE: Click the Phone to contact him directly (OR) The below contact option used to call our expert workers no extra charges.</string>
@@ -37,6 +37,11 @@
     <string name="whatsapp"><u>whatsapp</u></string>
     <string name="about"> About</string>
     <string name="my_contact">My \n Contact</string>
+    <string name="Food">Hotel</string>
+    <string name="medicine">Medical</string>
+    <string name="role">Your Role</string>
+    <string name="currentjob">Your Current Job</string>
+    <string name="rech">To Reach out our Thousands of Users.</string>
 
     <!--LOCATION ENTER HERE -->
 

@@ -31,19 +31,29 @@
                 android:id="@+id/mapmenu"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="160dp"
+                android:layout_marginStart="100dp"
                 android:padding="1dp"
                 android:src="@drawable/googlemap"
                 android:layout_marginLeft="200dp"
                 />
             <ImageView
                 android:id="@+id/login"
-                android:layout_width="match_parent"
+                android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
                 android:padding="10dp"
                 android:src="@drawable/ic_person_black_24dp"
-                android:layout_marginLeft="200dp"
+                android:layout_marginLeft="100dp"
+                android:elevation="20dp"
+                app:tint="@color/truewhite" />
+            <ImageView
+                android:id="@+id/addcontact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_marginLeft="0dp"
                 android:elevation="20dp"
                 app:tint="@color/truewhite" />
         </LinearLayout>
@@ -51,7 +61,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/truewhite">
+            android:background="@color/truewhite"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,950 +70,599 @@
                 android:orientation="vertical"
                 android:background="@color/truewhite">
 
-        <com.denzcoskun.imageslider.ImageSlider
-            android:id="@+id/imageslider"
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            app:iss_auto_cycle="true"
-            app:iss_period="2000"
-            app:iss_delay="0"
-            android:background="@drawable/sliderback"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Get a Way"
-                android:layout_centerHorizontal="true"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="24sp"/>
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            >
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/blach_border2"
-                    android:elevation="8dp"
-                    android:layout_margin="10dp">
-                    <ImageView
-                        android:id="@+id/workersintent"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/runworkers"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/blach_border2"
-                    android:elevation="8dp"
-                    android:layout_margin="10dp">
-                    <ImageView
-                        android:id="@+id/emergengyintent"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/emer2"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/blach_border2"
-                    android:elevation="8dp"
-                    android:layout_margin="10dp">
-                    <ImageView
-                        android:id="@+id/Fooddeliveryintent"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/runworkers"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/blach_border2"
-                    android:elevation="8dp"
-                    android:layout_margin="10dp">
-                    <ImageView
-                        android:id="@+id/helplineintent"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/runworkers"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/blach_border2"
-                    android:elevation="8dp"
-                    android:layout_margin="10dp">
-                    <ImageView
-                        android:id="@+id/mycontcatintent"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/runworkers"
-                        android:layout_centerInParent="true"/>
-
-                </RelativeLayout>
-
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="10dp"
-            android:padding="5dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/workers"
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageslider"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="2000"
+                    android:background="@drawable/sliderback"
+                    app:iss_delay="0"
                     android:layout_marginLeft="10dp"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textAllCaps="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
                     />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="See All"
-                    android:textSize="15sp"
-                    android:drawableRight="@drawable/ic_baseline_chevron_right_24"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"/>
-            </RelativeLayout>
 
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fillViewport="true"
-                android:measureAllChildren="false"
-                android:scrollbars="none">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get a Way"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"/>
 
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/mechanic"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
+                </RelativeLayout>
 
-                        <Button
-                            android:id="@+id/expandmechanicall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                    </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/blach_border2"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/workersintent"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/runworkers"
+                                android:layout_centerInParent="true"/>
 
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/electricians"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/expandelecall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/plumber"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/expandplumberall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/carpenter"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/expandcarpenterall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/welder"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:id="@+id/expandwelderall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
+                        </RelativeLayout>
 
 
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/blach_border2"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/emergengyintent"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/emer2"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
 
 
 
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/blach_border2"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/Fooddeliveryintent"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/deliveryood"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/blach_border2"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/helplineintent"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/support"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/blach_border2"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:id="@+id/mycontcatintent"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/police"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-
-
-
-            </HorizontalScrollView>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="15dp"
-            android:padding="5dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/emergency"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="10dp"
-                    android:textAllCaps="true"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="See All"
-                    android:textSize="15sp"
-                    android:drawableRight="@drawable/ic_baseline_chevron_right_24"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"/>
-            </RelativeLayout>
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fillViewport="true"
-                android:measureAllChildren="false"
-                android:scrollbars="none">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp">
 
                     <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/police"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                        <Button
-                            android:id="@+id/expandpoliceall"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="200dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/hospitals"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="First Aid"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
-                            />
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="180dp"
-                        android:layout_height="130dp"
-                        android:background="@drawable/blach_border2"
-                        android:layout_margin="15dp"
-                        >
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/mechanic"
-                            android:textColor="@color/truewhite"
-                            android:textSize="30sp"
-                            android:padding="20dp"
+                            android:text="@string/workers"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
                             />
 
-                        <Button
-                            android:layout_width="170dp"
+                        <TextView
+                            android:id="@+id/seeallworkers"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:background="@null"
-                            android:padding="20dp"
-                            android:text="Expand" />
-
+                            android:text="See All"
+                            android:textSize="15sp"
+                            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
                     </RelativeLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandmechanicall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/mechanic"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandelecall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/electricians"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandplumberall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/plumber"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandcarpenterall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/carpenter"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="180dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandwelderall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/welder"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </HorizontalScrollView>
+
 
                 </LinearLayout>
 
-            </HorizontalScrollView>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/workers"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:textAllCaps="true"
-            />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                android:layout_margin="20dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/mechanic"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandmechanic"
-                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="12dp"
+                    android:padding="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emergency"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textAllCaps="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/seeallemer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All"
+                            android:textSize="15sp"
+                            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:measureAllChildren="false"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="180dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:id="@+id/expandpoliceall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/police"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="@string/hospitals"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:layout_width="180dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="First Aid"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="180dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/blach_border2"
+                                android:layout_margin="15dp"
+                                >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Helpline"
+                                    android:textColor="@color/truewhite"
+                                    android:textSize="30sp"
+                                    android:padding="20dp"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/mechanic"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
-                />
-
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_margin="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                >
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/electricianicon"
-                    android:layout_marginLeft="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/electricians"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandelec"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                android:layout_margin="20dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/plumber"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandplumber"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/plumber"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
-                />
-
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_margin="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                >
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/carpenter"
-                    android:layout_marginLeft="20dp" />
+                    android:padding="5dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/carpenter"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
+                    android:text="Delivery"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
                     />
-                <Button
-                    android:id="@+id/expandcarpenter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-
-            </RelativeLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                android:layout_margin="20dp"
-                >
                 <TextView
+                    android:id="@+id/seealldelivery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/welder"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandwelder"
-                    android:layout_width="wrap_content"
+                    android:text="See All"
+                    android:textSize="15sp"
+                    android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/expand"
-                    android:background="@null"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
 
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/welder"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
-                />
-
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_margin="20dp">
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 >
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/emergencycall"
-                    android:layout_marginLeft="20dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Contact-us"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandcontactworkersus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="20dp">
 
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/blach_border2"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/foodde"
+                            />
 
-            </RelativeLayout>
+                        <TextView
+                            android:id="@+id/foodactivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotels"
+                            android:textColor="@color/truewhite"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentBottom="true"
+                            android:padding="25dp"
+                            android:gravity="center_horizontal"
+                           />
 
+                    </RelativeLayout>
 
-        </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/emergency"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:textAllCaps="true"
-            />
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/blach_border2"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/electricianicon"
+                            />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_margin="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                >
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/police"
-                    android:layout_marginLeft="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/police"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandpolice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medicine"
+                            android:textColor="@color/truewhite"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentBottom="true"
+                            android:padding="25dp"
+                            android:gravity="center_horizontal" />
 
 
-            </RelativeLayout>
+
+                    </RelativeLayout>
 
 
-        </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:background="@drawable/blach_border2"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/electricianicon"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/medicine"
+                            android:textColor="@color/truewhite"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentBottom="true"
+                            android:padding="25dp"
+                            android:gravity="center_horizontal" />
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                android:layout_margin="20dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Doctors"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandfirstaid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/firstaid"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
-                />
-
-        </RelativeLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_margin="20dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                >
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/ambulance"
-                    android:layout_marginLeft="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hospitals"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:layout_alignParentRight="true"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandambulance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:layout_alignParentRight="true"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
+                    </RelativeLayout>
 
 
-            </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
 
-        </androidx.cardview.widget.CardView>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/blach_border2"
-                android:layout_margin="20dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Contact-Us"
-                    android:textColor="@color/truewhite"
-                    android:textSize="30sp"
-                    android:padding="25dp"
-                    />
-                <Button
-                    android:id="@+id/expandcontactus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Expand"
-                    android:background="@null"
-                    android:padding="20dp"
-                    android:layout_alignParentBottom="true"
-                    />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/emergencycall"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="-0dp"
-                />
-
-        </RelativeLayout>
+            </LinearLayout>
+                </HorizontalScrollView>
 
             </LinearLayout>
         </ScrollView>

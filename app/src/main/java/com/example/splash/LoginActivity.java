@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     Button next,login;
     TextView titletext;
 
-    TextInputLayout fullname, username, email, password;
+    TextInputLayout fullname, username, email,location, password;
 
 
 
@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         fullname = findViewById(R.id.signup_fullname);
         username = findViewById(R.id.signup_username);
         email = findViewById(R.id.signup_email);
+        location = findViewById(R.id.signup_location);
         password = findViewById(R.id.signup_password);
 
 
@@ -45,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void callNextSignupScreen(View view){
 
-        if (!validatefullname() | !validateusername() | !validateemail() | !validatepassword()){
+        if (!validatefullname() | !validateusername() | !validateemail() | !validatelocationname() | !validatepassword()){
             return;
         }
 
@@ -83,6 +84,22 @@ public class LoginActivity extends AppCompatActivity {
         else{
             fullname.setError(null);
             fullname.setErrorEnabled(false);
+            return true;
+        }
+
+    }
+
+    private boolean validatelocationname(){
+
+        String val = location.getEditText().getText().toString().trim();
+
+        if (val.isEmpty()){
+            location.setError("Field can't be empty");
+            return false;
+        }
+        else{
+            location.setError(null);
+            location.setErrorEnabled(false);
             return true;
         }
 
