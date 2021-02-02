@@ -5,7 +5,7 @@
     android:background="@color/truewhite"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OnbordActivity">
+    tools:context=".onbord.OnbordActivity">
 
     <Button
         android:id="@+id/btndone"

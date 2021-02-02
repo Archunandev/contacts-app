@@ -14,54 +14,55 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".Detailfood"
-            android:parentActivityName=".FoodActivity"
-            android:theme="@style/App"
-            android:label="Hotel Details"/>
         <activity
-            android:name=".FoodActivity"
+            android:name=".detailshops.Detailfood"
+            android:label="Hotel Details"
+            android:parentActivityName=".shops.FoodActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".shops.FoodActivity"
             android:label="Food Shops"
             android:parentActivityName=".RecycleviewActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".AboutActivity"
+            android:name=".activities.AboutActivity"
             android:label="About"
-            android:parentActivityName=".Navigation"
+            android:parentActivityName=".activities.Navigation"
             android:theme="@style/App" />
         <activity
-            android:name=".Navigation"
+            android:name=".activities.Navigation"
             android:label="Settings"
             android:parentActivityName=".RecycleviewActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".Detailepolice"
+            android:name=".detailemergency.Detailepolice"
             android:label="Profile"
-            android:parentActivityName=".PoliceActivity"
+            android:parentActivityName=".emergency.PoliceActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".PoliceActivity"
+            android:name=".emergency.PoliceActivity"
             android:label="Police Station"
             android:parentActivityName=".RecycleviewActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".Detailelectric"
+            android:name=".detailsworkers.Detailelectric"
             android:label="Profile"
-            android:parentActivityName=".ElectriActivity"
+            android:parentActivityName=".workers.ElectriActivity"
             android:theme="@style/App" />
         <activity
             android:name=".RecycleviewActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".VerifyActivity"
+            android:name=".activities.VerifyActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Signupnext2Activity"
+            android:name=".activities.Signupnext2Activity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".SignupnextActivity"
+            android:name=".activities.SignupnextActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".OnbordActivity"
+            android:name=".onbord.OnbordActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,30 +71,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Detailmechanic"
+            android:name=".detailsworkers.Detailmechanic"
             android:label="Profile"
-            android:parentActivityName=".MechanicActivity"
+            android:parentActivityName=".workers.MechanicActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".ElectriActivity"
+            android:name=".workers.ElectriActivity"
             android:label="Electricians"
             android:parentActivityName=".GridView"
             android:theme="@style/App" />
         <activity
-            android:name=".Detailplumber"
+            android:name=".detailsworkers.Detailplumber"
             android:label="Profile"
-            android:parentActivityName=".PlumberActivity"
+            android:parentActivityName=".workers.PlumberActivity"
             android:theme="@style/App" />
         <activity
-            android:name=".PlumberActivity"
+            android:name=".workers.PlumberActivity"
             android:label="Plumber"
             android:parentActivityName=".GridView"
             android:theme="@style/App" />
         <activity
-            android:name=".MechanicActivity"
+            android:name=".workers.MechanicActivity"
             android:label="Mechanic"
             android:parentActivityName=".GridView"
             android:theme="@style/App" />

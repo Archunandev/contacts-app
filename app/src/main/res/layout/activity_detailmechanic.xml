@@ -1,302 +1,409 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/truewhite"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    tools:context=".Detailmechanic">
+    android:padding="5dp"
+    tools:context=".detailsworkers.Detailmechanic">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="10dp"
-        app:contentPadding="5dp"
-        app:cardElevation="5dp"
-        app:cardUseCompatPadding="true"
-        tools:context=".Detailmechanic"
-        tools:ignore="MissingConstraints">
-
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/main1linear"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageviewdetail"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:adjustViewBounds="true"
-                android:padding="2dp"
-                android:scaleType="centerCrop" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/truewhite"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="Location"
-                android:textSize="20sp"
-                android:drawableBottom="@drawable/ic_location_on_black_24dp"
-                android:drawableTint="@color/truewhite"/>
+            <LinearLayout
+                android:layout_width="156dp"
+                android:layout_height="156dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="5dp">
 
-            <TextView
-                android:id="@+id/textviewdetail1"
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="8dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_height="156dp"
+                    android:layout_width="156dp"
+                    >
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:background="@drawable/textstyle"
-                android:textColor="@color/colorPrimary"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="location"
-                android:textSize="20sp" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:background="@color/truewhite"
-                />
 
-            <TextView
+              >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:id="@+id/mechanicphoto"
+                android:src="@drawable/arjun"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+                android:padding="2dp"/>
+
+
+            </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="12dp"
                 android:layout_width="match_parent"
-                android:textColor="@color/truewhite"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="Name"
-                android:textSize="20sp"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:drawableTint="@color/truewhite"/>
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textviewdetail2"
-                android:textColor="@color/colorPrimary"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/textstyle"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="namem"
-                android:textSize="20sp" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
+                android:id="@+id/linera1"
                 android:layout_marginTop="5dp"
-                android:background="@color/truewhite"
-                />
+                >
 
 
             <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/truewhite"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="@string/call_him_directly"
-                android:textSize="20sp"
-                android:drawableBottom="@drawable/ic_phone_black_24dp" />
-
-            <TextView
-                android:id="@+id/textviewdetail3"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:autoLink="phone"
-                android:drawableEnd="@drawable/ic_baseline_file_copy_24"
-                android:background="@drawable/textstyle"
-                android:textColorLink="@color/colorPrimary"
-                android:drawablePadding="15dp"
-                android:clickable="true"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="phone"
-                android:textSize="20sp"
                 android:textAlignment="center"
-                android:drawableRight="@drawable/ic_baseline_file_copy_24" />
+                android:text="Exact Address"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/truewhite"
-                />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/truewhite"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:drawableBottom="@drawable/ic_sms_black_24dp"
-                android:text="@string/share_location_via_sms"
-                android:textSize="20sp"
-                 />
 
-            <TextView
-                android:id="@+id/textviewdetail4"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColorLink="@color/truewhite"
-                android:linksClickable="true"
-                android:clickable="true"
-                android:drawableEnd="@drawable/ic_baseline_file_copy_24"
-                android:drawablePadding="15dp"
-                android:background="@drawable/textstyle"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="@string/sms"
-                android:textSize="20sp"
-                android:drawableRight="@drawable/ic_baseline_file_copy_24" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/truewhite"
-                />
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:textColor="@color/truewhite"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="@string/share_location_via_whats_app"
-                android:textSize="20sp"
-                android:drawableBottom="@drawable/ic_message_black_24dp" />
+                <LinearLayout
+                    android:id="@+id/linera2"
+                    android:layout_below="@+id/linera1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
 
-            <TextView
-                android:id="@+id/textviewdetail5"
-                android:layout_width="match_parent"
-                android:textColor="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:linksClickable="true"
-                android:clickable="true"
-                android:autoLink="web"
-                android:textColorLink="@color/colorPrimary"
-                android:background="@drawable/textstyle"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:paddingLeft="10dp"
-                android:text="@string/whatsapp"
-                android:textSize="20sp"
-                 />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/truewhite"
-                />
-            <Button
-                android:id="@+id/startchat"
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="Click to Chat"
-                android:drawableEnd="@drawable/ic_send_black_24dp"
-                android:background="@drawable/loginbutton"
-                android:textColor="@color/colorPrimary"
-                android:drawableTint="@color/colorPrimary"
-                android:drawableRight="@drawable/ic_send_black_24dp"
-                 />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_margin="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/location"
+                        android:id="@+id/locationm"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linera3"
+                    android:layout_below="@+id/linera2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_map_24"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/location"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linera4"
+                    android:layout_below="@+id/linera3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_score_24"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/location"
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
 
         </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/main2linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/main1linear"
+                android:layout_marginTop="5dp">
 
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:text="Thisisyour Namehere"
+                    android:id="@+id/namem"
+                    android:textSize="26sp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/main3linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/main2linear">
 
+                <RatingBar
+                    android:id="@+id/ratinmec"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.8"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:stepSize="0.1"
+                    >
 
-    <Button
-        android:id="@+id/callusmechanic"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Call him"
-        android:layout_gravity="center"
-        android:drawableBottom="@drawable/ic_phone_black_24dp"
-        android:background="@drawable/normalbuttondesiign"
-        android:textColor="@color/truewhite"
-        />
+                </RatingBar>
 
-    <Button
-        android:id="@+id/sendsmsmechanic"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/normalbuttondesiign"
-        android:text="Send SMS"
-        android:layout_gravity="center"
-        android:drawableBottom="@drawable/ic_sms_black_24dp"
-        android:textColor="@color/truewhite"
-        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(22+)"
+                    android:gravity="center"
+                    android:layout_marginLeft="12dp"/>
 
-    <Button
-        android:id="@+id/sendwhatsappmechanic"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Chat Whatsapp"
-        android:layout_gravity="center"
-        android:drawableBottom="@drawable/ic_message_black_24dp"
-        android:background="@drawable/normalbuttondesiign"
-        android:textColor="@color/truewhite"
-         />
-
-    <Button
-        android:id="@+id/map"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Map"
-        android:layout_gravity="center"
-        android:drawableBottom="@drawable/ic_location_on_black_24dp"
-        android:textColor="@color/truewhite"
-        android:drawableTint="@color/truewhite"
-        android:background="@drawable/normalbuttondesiign"
-         />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="@string/note"
-            android:textColor="@color/black"
-            android:textSize="10sp"/>
-    </LinearLayout>
+            </LinearLayout>
 
 
-</ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/main4linear"
+                android:layout_below="@id/main3linear">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_below="@id/main4linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main5linear"
+                    android:orientation="horizontal">
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    app:fabSize="normal"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:elevation="8dp"
+                    android:tint="@color/colorPrimary"
+                    android:backgroundTint="@color/truewhite"
+                    android:clickable="true" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    app:fabSize="normal"
+                    android:src="@drawable/ic_message_black_24dp"
+                    android:elevation="12dp"
+                    android:tint="@color/colorPrimary"
+                    android:backgroundTint="@color/truewhite"
+                    android:clickable="true" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        app:fabSize="normal"
+                        android:src="@drawable/ic_sms_black_24dp"
+                        android:elevation="12dp"
+                        android:tint="@color/colorPrimary"
+                        android:backgroundTint="@color/truewhite"
+                        android:clickable="true" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        app:fabSize="normal"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:elevation="12dp"
+                        android:tint="@color/colorPrimary"
+                        android:backgroundTint="@color/truewhite"
+                        android:clickable="true" />
+                </LinearLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/main4linear"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="22dp">
+
+                <RelativeLayout
+                    android:id="@+id/main7relate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/main6linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_on_black_24dp"
+                            android:layout_margin="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/location"
+                            android:textSize="18sp"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main7linear"
+                        android:layout_below="@id/main6linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_on_black_24dp"
+                            android:layout_margin="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/location"
+                            android:textSize="18sp"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/main8linear"
+                        android:layout_below="@+id/main7linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location_on_black_24dp"
+                            android:layout_margin="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="@string/location"
+                            android:textSize="18sp"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal" />
+
+
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".Detailepolice">
+    tools:context=".detailemergency.Detailepolice">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             app:cardElevation="5dp"
             app:cardUseCompatPadding="true"
             app:contentPadding="5dp"
-            tools:context=".Detailepolice"
+            tools:context=".detailemergency.Detailepolice"
             tools:ignore="MissingConstraints">
 
 

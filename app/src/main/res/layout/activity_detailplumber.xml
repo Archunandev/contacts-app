@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".Detailplumber">
+    tools:context=".detailsworkers.Detailplumber">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             app:cardUseCompatPadding="true"
             app:contentPadding="5dp"
             android:background="@color/colorPrimary"
-            tools:context=".Detailplumber"
+            tools:context=".detailsworkers.Detailplumber"
             tools:ignore="MissingConstraints">
 
 

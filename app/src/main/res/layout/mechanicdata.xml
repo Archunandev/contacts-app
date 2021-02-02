@@ -5,13 +5,6 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/noresultmec"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No Result"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
 
 <androidx.cardview.widget.CardView
     app:cardCornerRadius="10dp"
@@ -22,7 +15,6 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,14 +22,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="18dp">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
                 android:id="@+id/mechanicphoto"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"
                 android:padding="2dp"/>
 
         </LinearLayout>
@@ -55,7 +50,7 @@
                 android:id="@+id/locationm"
                 android:textSize="20sp"
                 android:textColor="@color/truewhite"
-                android:layout_margin="10dp"/>
+                android:layout_margin="5dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,7 +60,7 @@
                 android:text="@string/namem"
                 android:id="@+id/namem"
                 android:textSize="20sp"
-                android:layout_margin="10dp"/>
+                android:layout_margin="5dp"/>
 
             <TextView
                 android:textColor="@color/truewhite"
@@ -75,7 +70,7 @@
                 android:text="phonem"
                 android:id="@+id/phonem"
                 android:textSize="20sp"
-                android:layout_margin="10dp"/>
+                android:layout_margin="5dp"/>
             <TextView
                 android:textColor="@color/truewhite"
                 android:layout_width="match_parent"

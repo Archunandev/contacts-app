@@ -15,7 +15,6 @@ import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,6 +23,14 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.interfaces.ItemClickListener;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.example.splash.activities.Navigation;
+import com.example.splash.emergency.PoliceActivity;
+import com.example.splash.shops.FoodActivity;
+import com.example.splash.workers.ElectriActivity;
+import com.example.splash.activities.LoginActivity;
+import com.example.splash.workers.MechanicActivity;
+import com.example.splash.workers.PlumberActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -38,7 +45,8 @@ public class RecycleviewActivity extends AppCompatActivity {
     private Toast backToast;
 
     TextView mechanic,elec,plumber,carpenter,welder,police,firstaid,ambulance,contactus ,seeallworkers,seeallemer,foodactivity;
-    ImageView login,navigation,mapmenu,centerimage,addcontact;
+    FloatingActionButton login,navigation,mapmenu,addcontact;
+    ImageView centerimage, workersintent,emergengyintent,fooddeliveryintent,helplineintent,policeintent;
     ImageSlider mainSlider;
 
     @Override
@@ -60,29 +68,40 @@ public class RecycleviewActivity extends AppCompatActivity {
             }
         },3000);
 
+        //recycler view intent declaration
+
         mechanic = findViewById(R.id.expandmechanicall);
         elec = findViewById(R.id.expandelecall);
-       plumber = findViewById(R.id.expandplumberall);
+        plumber = findViewById(R.id.expandplumberall);
         carpenter = findViewById(R.id.expandcarpenterall);
         welder = findViewById(R.id.expandwelderall);
         police = findViewById(R.id.expandpoliceall);
+
+        //Box grid view intent declaration
+
+        workersintent = findViewById(R.id.workersintent);
+        emergengyintent = findViewById(R.id.emergengyintent);
+        fooddeliveryintent = findViewById(R.id.Fooddeliveryintent);
+        helplineintent = findViewById(R.id.helplineintent);
+        policeintent = findViewById(R.id.policeintent);
 
 
        // firstaid = findViewById(R.id.expandfirstaid);
        // ambulance = findViewById(R.id.expandambulance);
        // contactus = findViewById(R.id.expandcontactus);
-        login = findViewById(R.id.login);
+       // login = findViewById(R.id.login);
         navigation = findViewById(R.id.navigattion);
         addcontact = findViewById(R.id.addcontact);
-        mapmenu = findViewById(R.id.mapmenu);
-        centerimage = findViewById(R.id.centerimage);
+       // mapmenu = findViewById(R.id.mapmenu);
+       // centerimage = findViewById(R.id.centerimage);
         foodactivity = findViewById(R.id.foodactivity);
-
         seeallworkers = findViewById(R.id.seeallworkers);
         seeallemer = findViewById(R.id.seeallemer);
 
 
         mainSlider = (ImageSlider) findViewById(R.id.imageslider);
+
+
 
         final List <SlideModel> remoteimages = new ArrayList<>();
 
@@ -144,10 +163,10 @@ public class RecycleviewActivity extends AppCompatActivity {
         }
         else {
 
-            addcontact.setOnClickListener(new View.OnClickListener() {
+           addcontact.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this,LoginActivity.class);
+                    Intent intent = new Intent(RecycleviewActivity.this, LoginActivity.class);
                     startActivity(intent);
 
                 }
@@ -162,14 +181,14 @@ public class RecycleviewActivity extends AppCompatActivity {
             });
 
 
-            login.setOnClickListener(new View.OnClickListener() {
+           /* login.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(RecycleviewActivity.this, Signupnext2Activity.class);
                     startActivity(intent);
                     onBackPressed();
                 }
-            });
+            }); */
 
             mechanic.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -247,8 +266,43 @@ public class RecycleviewActivity extends AppCompatActivity {
                 }
             });
 
+            workersintent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
+                    Intent intent = new Intent(RecycleviewActivity.this, GridView.class);
+                    startActivity(intent);
 
+                }
+            });
+            emergengyintent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(RecycleviewActivity.this, GridView.class);
+                    startActivity(intent);
+
+                }
+            });
+
+            fooddeliveryintent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(RecycleviewActivity.this, FoodActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+            policeintent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(RecycleviewActivity.this, PoliceActivity.class);
+                    startActivity(intent);
+
+                }
+            });
         }
     }
 

@@ -8,55 +8,50 @@
     android:background="@color/truewhite"
     tools:context=".RecycleviewActivity">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:padding="5dp"
-            android:background="@color/colorPrimary">
-            <ImageView
-                android:id="@+id/navigattion"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:src="@drawable/custommenu"
-                app:tint="@color/truewhite" />
-            <ImageView
-                android:id="@+id/centerimage"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/vecties1"
-                app:tint="@color/truewhite" />
-            <ImageView
-                android:id="@+id/mapmenu"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:padding="1dp"
-                android:src="@drawable/googlemap"
-                android:layout_marginLeft="200dp"
-                />
-            <ImageView
-                android:id="@+id/login"
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="0dp"
-                android:padding="10dp"
-                android:src="@drawable/ic_person_black_24dp"
-                android:layout_marginLeft="100dp"
-                android:elevation="20dp"
-                app:tint="@color/truewhite" />
-            <ImageView
-                android:id="@+id/addcontact"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="0dp"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_add_24"
-                android:layout_marginLeft="0dp"
-                android:elevation="20dp"
-                app:tint="@color/truewhite" />
-        </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/navigattion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/truewhite"
+            app:fabSize="mini"
+            android:layout_gravity="left|center"
+            android:elevation="12dp"
+            android:src="@drawable/custommenu"
+            android:tint="@color/colorPrimary"
+            android:clickable="true"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/centerimage"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/vecties1"
+            app:tint="@color/truewhite" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dp"
+            android:elevation="12dp"
+            android:backgroundTint="@color/truewhite"
+            android:src="@drawable/ic_baseline_add_24"
+            android:clickable="true"
+            android:tint="@color/colorPrimary"/>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -70,24 +65,32 @@
                 android:orientation="vertical"
                 android:background="@color/truewhite">
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp"
+                    app:contentPadding="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+
                 <com.denzcoskun.imageslider.ImageSlider
                     android:id="@+id/imageslider"
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
+                    android:layout_height="wrap_content"
                     app:iss_auto_cycle="true"
                     app:iss_period="2000"
-                    android:background="@drawable/sliderback"
                     app:iss_delay="0"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginTop="10dp"
                     />
-
+                </androidx.cardview.widget.CardView>
 
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
                     >
                     <TextView
                         android:layout_width="wrap_content"
@@ -214,7 +217,7 @@
                             android:elevation="8dp"
                             android:layout_margin="10dp">
                             <ImageView
-                                android:id="@+id/mycontcatintent"
+                                android:id="@+id/policeintent"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:src="@drawable/police"
@@ -233,11 +236,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="10dp"
-                    android:padding="5dp">
+                    android:padding="5dp"
+                    android:background="@drawable/sliderback">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sliderback"
+                        >
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -559,13 +565,7 @@
                         android:layout_height="180dp"
                         android:background="@drawable/blach_border2"
                         >
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/foodde"
-                            />
+
 
                         <TextView
                             android:id="@+id/foodactivity"
