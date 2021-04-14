@@ -29,6 +29,9 @@ public class Workersuser {
         this.received = received;
         this.photo = photo;
     }
+    public Workersuser() {
+
+    }
 
     public String getLocation() {
         return location;

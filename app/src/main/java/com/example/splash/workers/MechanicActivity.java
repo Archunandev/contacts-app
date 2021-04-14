@@ -34,8 +34,8 @@ public class MechanicActivity extends AppCompatActivity {
 
     EditText inputsearchm;
     RecyclerView mechanicrecycle;
-    FirebaseRecyclerOptions<Mechanicuser> options;
-    FirebaseRecyclerAdapter<Mechanicuser, Mechanicholder>adapter;
+    FirebaseRecyclerOptions<Workersuser> options;
+    FirebaseRecyclerAdapter<Workersuser, Workerholder>adapter;
     DatabaseReference Databaseref;
 
     TextView noresult;
@@ -61,7 +61,7 @@ public class MechanicActivity extends AppCompatActivity {
         },3000);
 
 
-        Databaseref = FirebaseDatabase.getInstance().getReference().child("car");
+        Databaseref = FirebaseDatabase.getInstance().getReference().child("Workermechanic");
 
         inputsearchm = findViewById(R.id.inputsearchm);
         mechanicrecycle = findViewById(R.id.mechanicrecycle);
@@ -100,21 +100,27 @@ public class MechanicActivity extends AppCompatActivity {
 
     private void LoadData(String data) {
 
-        Query query = Databaseref.orderByChild("locationm").startAt(data).endAt(data+"\uf8ff");
+        Query query = Databaseref.orderByChild("location").startAt(data).endAt(data+"\uf8ff");
 
 
-        options = new FirebaseRecyclerOptions.Builder<Mechanicuser>().setQuery(query,Mechanicuser.class).build();
+        options = new FirebaseRecyclerOptions.Builder<Workersuser>().setQuery(query,Workersuser.class).build();
 
-        adapter = new FirebaseRecyclerAdapter<Mechanicuser, Mechanicholder>(options) {
+        adapter = new FirebaseRecyclerAdapter<Workersuser, Workerholder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull Mechanicholder holder, final int position, @NonNull Mechanicuser model) {
+            protected void onBindViewHolder(@NonNull Workerholder holder, final int position, @NonNull Workersuser model) {
 
-                holder.textViewm1.setText(model.getLocationm());
-                holder.textViewm2.setText(model.getNamem());
-                holder.textViewm3.setText(model.getPhonem());
-                holder.textViewm4.setText(model.getSendsmsm());
-                holder.textViewm5.setText(model.getSendwhatsappm());
-                Picasso.get().load(model.getPhotom()).into(holder.imageViewm);
+                holder.location.setText(model.getLocation());
+                holder.name.setText(model.getName());
+                holder.phone.setText(model.getPhone());
+                holder.sendsms.setText(model.getSendsms());
+                holder.sendwhatsapp.setText(model.getSendwhatsapp());
+                holder.map.setText(model.getMap());
+                holder.rank.setText(model.getRank());
+                holder.since.setText(model.getSince());
+                holder.age.setText(model.getAge());
+                holder.exp.setText(model.getExp());
+                holder.received.setText(model.getReceived());
+                Picasso.get().load(model.getPhoto()).into(holder.workersphoto);
                 holder.v.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -129,10 +135,10 @@ public class MechanicActivity extends AppCompatActivity {
 
             @NonNull
             @Override
-            public Mechanicholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            public Workerholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-                View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.mechanicdata,parent,false);
-                return new Mechanicholder(v);
+                View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.workerdata,parent,false);
+                return new Workerholder(v);
             }
         };
 

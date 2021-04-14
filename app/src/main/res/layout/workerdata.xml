@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="18dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:id="@+id/workersphoto"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#fff"
+                    android:padding="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/location"
+                    android:id="@+id/location"
+                    android:textSize="20sp"
+                    android:textColor="@color/truewhite"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/truewhite"
+                    android:paddingLeft="10dp"
+                    android:text="@string/namem"
+                    android:id="@+id/name"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="phone"
+                    android:id="@+id/phone"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendsmsm"
+                    android:id="@+id/sendsms"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/sendwhatsapp"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/map"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/rank"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/since"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/age"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/exp"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textColor="@color/truewhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="sendwhatsappm"
+                    android:id="@+id/received"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

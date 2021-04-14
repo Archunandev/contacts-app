@@ -90,8 +90,8 @@ public class RecycleviewActivity extends AppCompatActivity {
        // ambulance = findViewById(R.id.expandambulance);
        // contactus = findViewById(R.id.expandcontactus);
        // login = findViewById(R.id.login);
-        navigation = findViewById(R.id.navigattion);
-        addcontact = findViewById(R.id.addcontact);
+       // navigation = findViewById(R.id.navigattion);
+      //  addcontact = findViewById(R.id.addcontact);
        // mapmenu = findViewById(R.id.mapmenu);
        // centerimage = findViewById(R.id.centerimage);
         foodactivity = findViewById(R.id.foodactivity);
@@ -163,22 +163,22 @@ public class RecycleviewActivity extends AppCompatActivity {
         }
         else {
 
-           addcontact.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, LoginActivity.class);
-                    startActivity(intent);
-
-                }
-            });
-
-            navigation.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(RecycleviewActivity.this, Navigation.class);
-                    startActivity(intent);
-                }
-            });
+//           addcontact.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(RecycleviewActivity.this, LoginActivity.class);
+//                    startActivity(intent);
+//
+//                }
+//            });
+//
+//            navigation.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(RecycleviewActivity.this, Navigation.class);
+//                    startActivity(intent);
+//                }
+//            });
 
 
            /* login.setOnClickListener(new View.OnClickListener() {

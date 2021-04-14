@@ -1,59 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:theme="@style/AppTheme"
     android:background="@color/truewhite"
     tools:context=".RecycleviewActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:padding="5dp"
-        android:background="@color/colorPrimary">
+        android:layout_height="match_parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/navigattion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:backgroundTint="@color/truewhite"
-            app:fabSize="mini"
-            android:layout_gravity="left|center"
-            android:elevation="12dp"
-            android:src="@drawable/custommenu"
-            android:tint="@color/colorPrimary"
-            android:clickable="true"
-            tools:ignore="MissingConstraints" />
-
-        <ImageView
-            android:id="@+id/centerimage"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/vecties1"
-            app:tint="@color/truewhite" />
+            android:focusableInTouchMode="true">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/addcontact"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="mini"
-            android:layout_gravity="right|center"
-            android:layout_marginRight="5dp"
-            android:elevation="12dp"
-            android:backgroundTint="@color/truewhite"
-            android:src="@drawable/ic_baseline_add_24"
-            android:clickable="true"
-            android:tint="@color/colorPrimary"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:background="@color/colorPrimary"
+            tools:targetApi="lollipop" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/home_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:visibility="visible"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/home_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        app:tint="@color/truewhite"
+                        android:src="@drawable/ic_menu_black_24dp"
+                        tools:targetApi="m"
+                        android:paddingRight="8dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                            android:id="@+id/centerimage"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/vecties1"
+                            app:tint="@color/truewhite" />
+
+                <RelativeLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/search_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        app:tint="@color/truewhite"
+                        android:src="@drawable/ic_search_black_24dp"
+                        tools:targetApi="m"
+                        android:paddingRight="8dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="@color/colorPrimary">-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/navigattion"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:backgroundTint="@color/truewhite"-->
+<!--            app:fabSize="mini"-->
+<!--            android:layout_gravity="left|center"-->
+<!--            android:elevation="12dp"-->
+<!--            android:src="@drawable/custommenu"-->
+<!--            android:tint="@color/colorPrimary"-->
+<!--            android:clickable="true"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/centerimage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/vecties1"-->
+<!--            app:tint="@color/truewhite" />-->
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/addcontact"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fabSize="mini"-->
+<!--            android:layout_gravity="right|center"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:elevation="12dp"-->
+<!--            android:backgroundTint="@color/truewhite"-->
+<!--            android:src="@drawable/ic_baseline_add_24"-->
+<!--            android:clickable="true"-->
+<!--            android:tint="@color/colorPrimary"/>-->
 
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
-        <ScrollView
+        <androidx.core.widget.NestedScrollView
+            android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/truewhite"
@@ -665,6 +759,29 @@
                 </HorizontalScrollView>
 
             </LinearLayout>
-        </ScrollView>
+        </androidx.core.widget.NestedScrollView>
 
-</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_marginEnd="-65dp"
+        android:layout_marginRight="-65dp"
+        app:itemTextColor="@color/colorPrimary"
+        app:itemIconTint="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include layout="@layout/navigation_layout" />
+
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

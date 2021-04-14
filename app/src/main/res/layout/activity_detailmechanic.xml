@@ -14,26 +14,26 @@
         android:layout_alignParentBottom="true">
 
 
-    <Button
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="order"
-        android:layout_marginBottom="5dp"
-        android:textColor="@color/truewhite"
-        android:background="@drawable/normalbuttondesiign"
-        android:layout_alignParentBottom="true"/>
+<!--    <Button-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="order"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:textColor="@color/truewhite"-->
+<!--        android:background="@drawable/normalbuttondesiign"-->
+<!--        android:layout_alignParentBottom="true"/>-->
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_marginLeft="8dp"
-            android:textColor="@color/truewhite"
-            android:layout_marginBottom="5dp"
-            android:layout_height="wrap_content"
-            android:text="order"
-            android:background="@drawable/normalbuttondesiign"
-            android:layout_alignParentBottom="true"/>
+<!--        <Button-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:textColor="@color/truewhite"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="order"-->
+<!--            android:background="@drawable/normalbuttondesiign"-->
+<!--            android:layout_alignParentBottom="true"/>-->
 
     </LinearLayout>
 
@@ -67,12 +67,7 @@
 <!--                    android:layout_width="156dp"-->
 <!--                    >-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
 
-              >
 
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -86,7 +81,6 @@
                 android:padding="2dp"/>
 
 
-            </RelativeLayout>
 
 
             </LinearLayout>
